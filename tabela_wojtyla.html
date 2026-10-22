@@ -1,0 +1,138 @@
+<!DOCTYPE html> 
+<html lang="pl-PL"> 
+<html> 
+     <head> 
+             <meta charset="utf-8"> 
+             <title>Tabela_Wojtyła</title> 
+	<style>
+        {
+            border: 3px solid #ff0000;
+            padding: 5px;
+            display: inline-block;
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .main-header {
+            font-size: 24px;
+            padding: 10px;
+            color: #000000;
+            border-bottom: 2px solid #ff0000;
+        }
+
+        .headers th {
+            background-color: #00008b;
+            color: #ffffff;
+            padding: 10px;
+            border: 1px solid #ff0000;
+        }
+
+        .intel-row td {
+            background-color: #6495ed;
+            color: #ffffff;
+            padding: 10px;
+            border: 1px solid #00008b;
+        }
+
+        .amd-row td {
+            background-color: #1e90ff;
+            color: #ffffff;
+            padding: 10px;
+            border: 1px solid #00008b;
+        }
+
+        .intel-row td:first-child { color: #00ffff; }
+        .amd-row td:first-child { color: #a9a9a9; }
+        .taktowanie { color: #ff0000 !important; }
+
+        .amd-dark td {
+            color: #00008b;
+        }
+        .amd-dark td:first-child { color: #00008b; }
+        .amd-dark .taktowanie { color: #ff0000 !important; }
+
+        /* Zielona stopka na samym dole */
+        .footer-row {
+            background-color: #004d20;
+            color: #ffffff;
+            font-size: 18px;
+            padding: 10px;
+        }
+    </style>
+     </head> 
+    <body> 
+ 	<div class="table-container">
+    <table>
+        <!-- Nagłówek główny rozciągnięty na wszystkie kolumny -->
+        <tr>
+            <th colspan="6" class="main-header">Dane Komputerowe – Wojtyła Jakub 1Pg2</th>
+        </tr>
+        
+        <!-- Nagłówki kolumn -->
+        <tr class="headers">
+            <th>Model procesora</th>
+            <th>Producent</th>
+            <th>Liczba rdzeni</th>
+            <th>Liczba Wątków</th>
+            <th>Taktowanie maksymalne</th>
+            <th>Grafika zintegrowana</th>
+        </tr>
+        
+        <!-- Dane Intel -->
+        <tr class="intel-row">
+            <td>I9-14900K</td>
+            <td>Intel</td>
+            <td>24 rdzeni</td>
+            <td>32 Wątków</td>
+            <td class="taktowanie">6.0 GHz</td>
+            <td rowspan="3" style="background-color: #6495ed; color: black; border: 1px solid #00008b;">Intel UHD<br>Graphics 770</td>
+        </tr>
+        <tr class="intel-row">
+            <td>I7-14700K</td>
+            <td>Intel</td>
+            <td>20 rdzeni</td>
+            <td>28 Wątków</td>
+            <td class="taktowanie">5.6 GHz</td>
+        </tr>
+        <tr class="intel-row">
+            <td>I5-14600K</td>
+            <td>Intel</td>
+            <td>14 rdzeni</td>
+            <td>20 Wątków</td>
+            <td class="taktowanie">5.3 GHz</td>
+        </tr>
+        
+        <!-- Dane AMD -->
+        <tr class="amd-row">
+            <td>Ryzen 9 9950X</td>
+            <td>AMD</td>
+            <td>16 rdzeni</td>
+            <td>32 Wątków</td>
+            <td class="taktowanie">5.7 GHz</td>
+            <td rowspan="2" style="background-color: #1e90ff; color: black; border: 1px solid #00008b;">AMD Radeon<br>Graphics</td>
+        </tr>
+        <tr class="amd-row amd-dark">
+            <td>Ryzen 5 9600X</td>
+            <td>AMD</td>
+            <td>6 rdzeni</td>
+            <td>12 wątków</td>
+            <td class="taktowanie">5.4 GHz</td>
+        </tr>
+        
+        <tr>
+            <td colspan="6" class="footer-row">Dane Komputerowe</td>
+        </tr>
+    </table>
+</div>
+	
+	
+
+	<A HREF="index.html"><h1>Wróć</h1></A>
+
+    </body> 
+  </html> 
