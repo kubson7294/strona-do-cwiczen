@@ -1,16 +1,108 @@
-<!DOCTYPE html> 
-<html lang="pl-PL"> 
-<html> 
-     <head> 
-             <meta charset="utf-8"> 
-             <title>Formularz_Wojtyła</title> 
-     </head> 
-    <body> 
- 	Tutaj jest formularz<br> <br>
-	
-	
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz Sportowy</title>
+</head>
+<body>
 
-	<A HREF="index.html">Wróć </A>
+    <h2>Formularz</h2>
 
-    </body> 
-  </html> 
+    <form action="#" method="POST" enctype="multipart/form-data">
+        
+        <p>
+            <label>Imię: <input type="text" name="imie"></label>
+        </p>
+        <p>
+            <label>Nazwisko: <input type="text" name="nazwisko"></label>
+        </p>
+        <p>
+            <label>Email: <input type="email" name="email"></label>
+        </p>
+        <p>
+            <label>Telefon: <input type="tel" name="telefon"></label>
+        </p>
+        <p>
+            <label>Hasło: <input type="password" name="haslo"></label>
+        </p>
+
+        <hr>
+
+        <p>
+            <label>Opisz jaki sport uprawiasz:</label><br>
+            <textarea name="opis" rows="4" cols="40"></textarea>
+        </p>
+
+        <p>
+            <label>Wybierz jaki uprawiasz sport:</label><br>
+            <select name="wybor_sportu">
+                <option value="bieganie">Bieganie</option>
+                <option value="rower">Jazda na rowerze</option>
+                <option value="plywanie">Pływanie</option>
+                <option value="inny">Inny</option>
+            </select>
+        </p>
+
+        <p>
+            <label>Jak często uprawiasz sport?</label><br>
+            <input type="radio" name="czestotliwosc" value="dzien"> raz na dzień<br>
+            <input type="radio" name="czestotliwosc" value="tydzien"> raz na tydzień<br>
+            <input type="radio" name="czestotliwosc" value="miesiac"> raz na miesiąc<br>
+            <input type="radio" name="czestotliwosc" value="rok"> raz na rok<br>
+            <input type="radio" name="czestotliwosc" value="nigdy"> nigdy<br>
+            <input type="radio" name="czestotliwosc" value="inny"> inny: <input type="text" name="czestotliwosc_inna">
+        </p>
+
+        <p>
+            <label>Jak dużo czasu uprawiasz sport?</label><br>
+            1h <input type="range" name="czas" min="1" max="4" step="1"> 5h i więcej
+        </p>
+
+        <p>
+            <label>to popularny sport?</label><br>
+            <input type="radio" name="popularny" value="tak"> tak<br>
+            <input type="radio" name="popularny" value="nie"> nie<br>
+            <input type="radio" name="popularny" value="nie_wiem"> nie wiem
+        </p>
+
+        <p>
+            <label>to rodzinny sport?</label><br>
+            <input type="radio" name="rodzinny" value="tak"> tak<br>
+            <input type="radio" name="rodzinny" value="nie"> nie<br>
+            <input type="radio" name="rodzinny" value="czasami"> czasami
+        </p>
+
+        <p>
+            <label>to sport z przyjaciółmi?</label><br>
+            <input type="radio" name="przyjaciele" value="tak"> tak<br>
+            <input type="radio" name="przyjaciele" value="nie"> nie<br>
+            <input type="radio" name="przyjaciele" value="czasami"> czasami
+        </p>
+
+        <p>
+            <label>Jeśli masz zdjęcie powiązane z uprawianym sportem Dołącz tutaj:</label><br>
+            <input type="file" name="zdjecie">
+        </p>
+
+        <hr>
+
+        <p>
+            <button type="reset">Anuluj formularz</button>
+            <button type="submit">Wyślij</button>
+        </p>
+
+    </form>
+
+    <hr>
+
+    <p>
+        <a href="https://facebook.com">facebook.com</a> | 
+        <a href="https://instagram.com">instagram.com</a> | 
+        <a href="https://tiktok.com">tiktok.com</a>
+    </p>
+	
+	<hr>
+	<h2>Jakub Wojtyła</h2>
+
+</body>
+</html>
